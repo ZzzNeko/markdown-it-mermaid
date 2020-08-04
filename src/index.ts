@@ -1,5 +1,8 @@
-import mermaid from 'mermaid'
+// @ts-ignore
+import mermaid from 'mermaid/dist/mermaid'
 import markdown from 'markdown-it'
+
+const isWindow = typeof window === 'object'
 
 function mermaidPlugin(md: markdown) {
   const rules = md.renderer.rules
@@ -10,9 +13,11 @@ function mermaidPlugin(md: markdown) {
     if (info.trim() === "mermaid") {
       try {
         mermaid.parse(content);
-        setTimeout(() => {
-          mermaid.init('.mermaid')
-        }, 0);
+        if (isWindow) {
+          setTimeout(() => {
+            mermaid.init('.mermaid')
+          }, 0);
+        }
         return `<div class="mermaid">${content}</div>`;
       } catch ({ str, hash }) {
         return `<pre class="mermaid-error">${str}</pre>`;
