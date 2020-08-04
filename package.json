@@ -31,7 +31,6 @@
   },
   "dependencies": {
     "@types/markdown-it": "^10.0.1",
-    "@types/mermaid": "^8.2.1",
     "mermaid": "^8.6.4"
   },
   "repository": {
