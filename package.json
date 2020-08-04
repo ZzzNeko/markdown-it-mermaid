@@ -29,5 +29,23 @@
     "terser": "^4.8.0",
     "typescript": "^3.9.7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/markdown-it": "^10.0.1",
+    "@types/mermaid": "^8.2.1",
+    "mermaid": "^8.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZzzNeko/markdown-it-mermaid.git"
+  },
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "mermaid"
+  ],
+  "bugs": {
+    "url": "https://github.com/ZzzNeko/markdown-it-mermaid/issues"
+  },
+  "homepage": "https://github.com/ZzzNeko/markdown-it-mermaid#readme"
 }
