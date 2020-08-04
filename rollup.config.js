@@ -12,11 +12,8 @@ export default {
     exports: "default",
     noConflict: true,
     sourcemap: true,
-    // sourcemapExcludeSources: true,
-    // compact: true, // build 后代码紧凑
-    // minifyInternalExports: true,
   },
-  external: [],
+  external: ["mermaid"],
   treeshake: true,
   plugins: [resolve(), commonjs(), json(), babel()],
 };
